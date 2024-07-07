@@ -1,0 +1,79 @@
+1. b) using <link> tag
+2. b) using <p> tag
+3. b) false
+4. b) false
+5.function ValueOfC() {
+  var y = 10;
+  var c = y ** y;
+  console.log(c);
+  return c;
+}
+ValueOfC(); // —-->
+c) 10000000000
+6.const people = [
+  { id: 1, name: 'John', age: 30 },
+  { id: 2, name: 'Jane', age: 25 },
+  { id: 3, name: 'Bob', age: 40 },
+];
+Output array: ['John', 'Jane', 'Bob']
+const names = people.map(person => person.name);
+// Output: ['John', 'Jane', 'Bob']
+const peopleWithSalary = people.map(person => ({
+  ...person,
+  salary: 50000
+}));
+// Output: [
+// { id: 1, name: 'John', age: 30, salary: 50000 },
+// { id: 2, name: 'Jane', age: 25, salary: 50000 },
+// { id: 3, name: 'Bob', age: 40, salary: 50000 }
+// ]
+const filteredPeople = people.filter(person => person.age > 30)
+                             .map(person => ({ name: person.name, age: person.age }));
+// Output: [{ name: 'Bob', age: 40 }]
+7.function add(x, y) {
+  return x + y;
+}
+
+function subtract(x, y) {
+  return x - y;
+}
+
+function main(cb1, cb2, x, y) {
+  console.log('Addition:', cb1(x, y));
+  console.log('Subtraction:', cb2(x, y));
+}
+
+const x = 11;
+const y = 4;
+
+main(add, subtract, x, y);
+// Output: 
+// Addition: 15
+// Subtraction: 7
+8.var users = [
+  { firstName: 'Susan', lastName: 'Steward' },
+  { firstName: 'Daniel', lastName: 'Longbottom' },
+  { firstName: 'Jacob', lastName: 'Black' }
+];
+
+const outputArray = users.map(user => `${user.firstName} ${user.lastName}`);
+// Output: ["Susan Steward", "Daniel Longbottom", "Jacob Black"]
+9.var arr = [1, 2, 3, 4, 5].filter(func);
+function func(v) {
+  return false;
+}
+c) []
+10.B) display: none removes the element from the DOM while visibility: hidden just hides the element.
+11.var a = 1;
+var b = 0;
+while (a <= 3) {
+  a++;
+  b += a * 2;
+  console.log(b);
+}
+A) 4 10 18 
+12.var arr = [1, 2, 3, 4];
+arr.unshift(100);
+arr.shift();
+A) [1, 2, 3, 4]
+13.Answer : a) [1, 2, 3, 4]
